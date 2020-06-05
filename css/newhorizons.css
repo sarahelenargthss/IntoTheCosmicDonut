@@ -1,0 +1,21 @@
+main #newHorizons div div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #newHorizons div #nh_1 input {
+    background-color: #040404;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    height: 40px;
+    width: 100%;
+    font-family: 'Aldrich';
+    font-weight: normal;
+    font-variant-caps: all-petite-caps;
+    font-size: xx-large;
+    text-align: center;
+}

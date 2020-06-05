@@ -1,0 +1,44 @@
+main #about div {
+    justify-content: center;
+    align-items: center;
+}
+
+main #about a {
+    color: #c20ab6;
+}
+
+main #about span {
+    color: #c20ab6;
+}
+
+@media only screen and (min-width: 700px) {
+    main #about div {
+        width: 650px;
+    }
+
+    main #about div img {
+        width: 200px;
+    }
+
+    main #about div figure {
+        float: left;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    main #about div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #about div img {
+        width: 50%;
+    }
+    
+    main #about div figure {
+        margin-bottom: 5px;
+    }
+}

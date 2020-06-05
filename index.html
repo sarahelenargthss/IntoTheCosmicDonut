@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat Subrayada' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/kbos.css">
+    <link rel="stylesheet" type="text/css" href="css/newhorizons.css">
+    <link rel="stylesheet" type="text/css" href="css/haumea.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <title>Into The Cosmic Donut</title>
+</head>
+
+<body>
+    <nav>
+        <a id="menuIcon"><img src="css/img/menu.png" alt=""></a>
+        <ul>
+            <li><a href="javascript: home()">Home</a></li>
+            <li><a href="#kbos">KBOs</a></li>
+            <li><a href="#newHorizons">New Horizons</a></li> 
+            <li><a href="#haumea">haumea</a></li>
+            <li><a href="#about">Info</a>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1><span>Into The Cosmic Donut</span></h1>
+    </header>
+    <main>
+        <section id="kbos">
+            <span class="score">Score: 00/10</span>
+            <div class="shadow"></div>
+            <h1>kbos</h1>
+            <div class="divGame">
+                <div class="startGame" id="kbos_1">
+                    <p>
+                        Os objetos do Cinturão de Kuiper (KBOs) precisam ser catalogados pela ordem em que foram descobertos.
+                        Você consegue memorizá-la?
+                        Cada um será apresentado em sua ordem, um em cada fase. Em cada uma delas, você precisará 
+                        selecionar a ordem que foi seguida até o momento e mais o novo objeto dado.
+                    </p>
+                    <button id="startKBOs">Play</button>
+                </div>
+
+                <div class="gameBox" id="kbos_2">
+                    <table>
+                        <tr>
+                            <td id="kbo_1">1</td>
+                            <td id="kbo_2">2</td>
+                            <td id="kbo_3">3</td>
+                        </tr>
+                        <tr>
+                            <td id="kbo_4">4</td>
+                            <td id="kbo_5">5</td>
+                            <td id="kbo_6">6</td>
+                        </tr>
+                        <tr>
+                            <td id="kbo_7">7</td>
+                            <td id="kbo_8">8</td>
+                            <td id="kbo_9">9</td>
+                        </tr>
+                    </table>
+                    <button id="submitKBOs">Submit</button>
+                </div>
+            </div>
+        </section>
+        <section id="newHorizons">
+            <span class="score">Score: 0/6</span>
+            <div class="shadow"></div>
+            <h1>New Horizons</h1>
+            <div class="divGame">
+                <div class="startGame" id="nh_2">
+                    <p>
+                        A nave New Horizons foi lançada, mas ainda existem muitos obstáculos pela frente e muitos 
+                        cálculos a serem feitos. Você está capacitado para o cargo?
+                        Responda as perguntas apenas com números.
+                    </p>
+                    <button id="startNH">Play</button>
+                </div>
+                
+                <div class="gameBox" id="nh_1">
+                    <p id="questionNH" for="result">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <input type="number" name="result" id="resultNH">
+                    <button id="submitNH">Submit</button>
+                </div>
+            </div>
+        </section>
+        <section id="haumea">
+            <span class="score">Score: 00/10</span>
+            <div class="shadow"></div>
+            <h1>haumea</h1>
+            <div class="divGame">
+                <div class="startGame" id="haumea_1">
+                    <p>
+                        Quando Haumea, um objeto do Cinturão de Kuiper, colidiu com outro objeto, vários 
+                        fragmentos de sua superfície se separaram e ficaram fragmentados, além de possuir duas luas. Com uma das 
+                        rotações mais rápidas feitas ao redor do Sol, Haumea completa uma rotação em apenas 4h.
+                        Com essa velocidade, você conseguiria diferenciar Haumea dos outros objetos ao seu redor?
+                        A cada fase, selecione o objeto que possui uma cor diferente.
+                    </p>
+                    <button id="startHaumea">Play</button>
+                </div>
+                <div class="gameBox" id="haumea_2">
+                    <table>
+                        <tr>
+                            <td id="neb_cor_1">1</td>
+                            <td id="neb_cor_2">2</td>
+                            <td id="neb_cor_3">3</td>
+                            <td id="neb_cor_4">4</td>
+                            <td id="neb_cor_5">5</td>
+                            <td id="neb_cor_6">6</td>
+                            <td id="neb_cor_7">7</td>
+                            <td id="neb_cor_8">8</td>
+                            <td id="neb_cor_9">9</td>
+                            <td id="neb_cor_10">10</td>
+                        </tr>
+                    </table>
+                    <button id="submitHaumea">Submit</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="shadow"></div>
+            <h1>Contact</h1>
+            <form action="">
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject">
+                </div>
+                <textarea name="email_content" id="email_content"></textarea>
+            </form>
+            <span class="score">Para dúvidas ou sugestões, entre em contato pelo formulário acima:</span>
+        </section>
+        <section id="about">
+            <div class="shadowMargin"></div>
+            <h1>About</h1>
+            <div>
+                <figure>
+                    <img src="css/img/about.jpg" alt="profile">
+                    <figcaption>Sara Helena Régis Theiss</figcaption>
+                </figure>
+                <p>
+                    O site <span>Into The Cosmic Donut</span> foi desenvolvido por Sara Helena Régis Theiss, acadêmica 
+                    do curso de Ciência da Computação da Universidade Regional de Blumenau, localizada em Santa Catarina, Brasil.
+                    <br> <br>
+                    O site oferece 3 jogos, cujos temas envolvem o Cinturão de Kuiper 
+                    (<a href="https://solarsystem.nasa.gov/solar-system/kuiper-belt/overview/" target="_blank">Kuiper belt</a>): objetos do cinturão 
+                    de Kuiper (KBOs), a nave New Horizons, lançada em 19 de janeiro de 2006 que já alcançou e passou por 
+                    Plutão e vai cada vez mais fundo no cinturão, e o Planeta Anão Haumea, um dos objetos com 
+                    rotação mais rápida em nosso sistema solar.
+                    <br> <br>
+                    O nome do site foi inspirado pelo formato do cinturão, que é como um donut gigante ao redor do Sol, 
+                    e a nave New Horizons, a primeira a explorar KBOs de perto.
+                </p>
+            </div>
+        </section>
+        <div id="shadow"></div>
+    </main>
+    <footer>
+        <div id="footer_1">
+            <h1><a href="javascript: home()">Reed Quick Games</a></h1>
+            <span>Designed by Sara Theiss</span>
+            <a id="login" href="login.html">Acesso Exclusivo</a>
+        </div>
+        <div id="footer_2">
+            <a href="https://www.instagram.com/sarahelenargthss/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/sara-helena-régis-theiss-aa0654162" target="_blank">Linkedin</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

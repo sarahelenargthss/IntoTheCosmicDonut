@@ -1,0 +1,45 @@
+footer {
+    border-top: 1px inset #ffffff;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+footer #footer_1 #login {
+    color: #575757;
+}
+
+footer #footer_2 a {
+    text-align: right;
+    margin: 5px;
+}
+
+footer h1 {
+    margin: 0 0 15px 0;
+}
+
+@media only screen and (min-width: 700px) {
+    footer a:hover {
+        text-decoration: underline;
+    }
+}

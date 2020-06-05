@@ -1,0 +1,69 @@
+main #contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #contact form div {
+    max-width: 650px;
+    margin-bottom: 15px;
+}
+
+main #contact div input {
+    height: 25px;
+    width: 100%;
+    background-color: #040404;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Aldrich';
+    font-weight: normal;
+    font-variant-caps: all-petite-caps;
+}
+main #contact textarea {
+    resize: none;
+    background-color: #040404;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Aldrich';
+    font-weight: normal;
+    width: 100%;
+    height: 200px;
+}
+
+@media only screen and (min-width: 700px) {
+    main #contact form div {
+        width: 650px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main #contact div label {
+        width: 70px;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    main #contact div input {
+        font-size: larger;
+    }
+    main #contact textarea {
+        font-size: larger;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    main #contact form div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main #contact div input {
+        font-size: large;
+    }
+    main #contact textarea {
+        font-size: large;
+    }
+}

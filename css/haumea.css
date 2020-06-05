@@ -1,0 +1,20 @@
+main #haumea div div {
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main #haumea table{
+    height: 250px;
+    background-color: #040404;
+}
+
+main #haumea td {
+    height: 100%;
+    width: 25px;
+    text-align: center;
+    border: 3px solid #040404;
+}

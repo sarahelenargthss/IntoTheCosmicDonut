@@ -1,0 +1,48 @@
+main #kbos div div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #kbos td{
+    border: 3px solid #040404;
+    height: 75px;
+    width: 75px;
+    background-color: #040404;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    box-shadow: 10 10 2px #040404;
+}
+
+main #kbos tr:nth-child(odd) td:nth-child(odd){
+    box-shadow: inset 0 0 15px #026fff66;
+}
+
+main #kbos tr:nth-child(odd) td:nth-child(even){
+    box-shadow: inset 0 0 15px #94078a99;
+}
+
+main #kbos tr:nth-child(even) td:nth-child(odd){
+    box-shadow: inset 0 0 15px #94078a99;
+}
+
+main #kbos tr:nth-child(even) td:nth-child(even){
+    box-shadow: inset 0 0 15px #026fff66;
+}
+
+main #kbos td:active{
+    border: 3px solid #ffffff;
+}
+
+@media only screen and (min-width: 700px) {
+    main #kbos td:hover{
+        border: 3px;
+        border-style: inherit;
+    }
+}
